@@ -1,7 +1,7 @@
 #	TỔNG HỢP 40 BÀI TOÁN ĐỆ QUY VIẾT BẰNG C++
 
-##CÁC BÀI TOÁN TÍNH TỔNG BẰNG PHƯƠNG PHÁP ĐỆ QUY
-###Bài 01: Tính tổng s= 1+ 2+ 3+.....+n
+## CÁC BÀI TOÁN TÍNH TỔNG BẰNG PHƯƠNG PHÁP ĐỆ QUY
+### Bài 01: Tính tổng s= 1+ 2+ 3+.....+n
 ```cpp
 int bai01(int n)
 {
@@ -11,7 +11,7 @@ int bai01(int n)
 		return bai01(n- 1)+ n;
 }
 ```
-###Bài 02: Tính tổng: S(n)= 1^2+ 2^2+ 3^2+...+ n^2
+### Bài 02: Tính tổng: S(n)= 1^2+ 2^2+ 3^2+...+ n^2
 ```cpp
 int bai02(int n)
 {
@@ -21,7 +21,7 @@ int bai02(int n)
 		return bai02(n-1)+ n*n;
 }
 ```
-###Bài 03: Tính tổng: S(n)= 1+ 1/2+ 1/3+...+ 1/n
+### Bài 03: Tính tổng: S(n)= 1+ 1/2+ 1/3+...+ 1/n
 ```cpp
 float bai03(int n)
 {
@@ -31,7 +31,7 @@ float bai03(int n)
 		return bai03( n-1)+ (float)1/n;
 }
 ```
-###Bài 04: Tính tổng S(n)= 1/2+ 1/4+ 1/6+..+1/(2*n)
+### Bài 04: Tính tổng S(n)= 1/2+ 1/4+ 1/6+..+1/(2*n)
 ```cpp
 float bai04(int n)
 {
@@ -41,7 +41,7 @@ float bai04(int n)
 		return bai04(n-1) + (float) 1/(2*n);
 }
 ```
-###Bài 05: Tính tổng S(n)= 1+ 1/3+ 1/5+...+1/(2n+1)
+### Bài 05: Tính tổng S(n)= 1+ 1/3+ 1/5+...+1/(2n+1)
 ```cpp
 float bai05(int n)
 {
@@ -51,7 +51,7 @@ float bai05(int n)
 		return bai05(n-1) +(float) 1/(2*n+1);
 }
 ```
-###Bài 06: Tính tổng S(n)= 1/1*2+ 1/2*3+ 1/3*4+ ...+ 1/(n* (n+1))
+### Bài 06: Tính tổng S(n)= 1/1*2+ 1/2*3+ 1/3*4+ ...+ 1/(n* (n+1))
 ```cpp
 float bai06(int n)
 {
@@ -61,7 +61,7 @@ float bai06(int n)
 		return bai06(n-1) +(float) 1/(n*(n+1));
 }
 ```
-###Bài 07: Tính tổng S(n)= 1/2+ 2/3+ 3/4+...+n/n+1
+### Bài 07: Tính tổng S(n)= 1/2+ 2/3+ 3/4+...+n/n+1
 ```cpp
 float bai07(int n)
 {
@@ -71,7 +71,7 @@ float bai07(int n)
 		return bai07(n-1) +(float) n/(n+1);
 }
 ```
-###Bài 08: Tính tổng S(n)= 1/2+ 3/4+ 5/6+...+2n+1/2n+2
+### Bài 08: Tính tổng S(n)= 1/2+ 3/4+ 5/6+...+2n+1/2n+2
 ```cpp
 float bai08(int n)
 {
@@ -81,7 +81,7 @@ float bai08(int n)
 		return bai08(n-1) + ((float)(2*n+1)/(2*n+2));
 }
 ```
-###Bài 09: Tính T= 1*2*3*...*n
+### Bài 09: Tính T= 1*2*3*...*n
 ```cpp
 int bai09(int n)
 {
@@ -91,7 +91,7 @@ int bai09(int n)
 		return bai09(n-1) * n;
 }
 ```
-###Bài 10: Tính T= x^n
+### Bài 10: Tính T= x^n
 ```cpp
 int bai10(int x, int n)
 {
@@ -110,7 +110,7 @@ int bai10(int x, int n)
 	return bai10(x, n-1) * pow((float)x, n);
 }
 ```
-###Bài 11: Tính S= 1+ 1.2+ 1.2.3+...+ 1.2.3....n
+### Bài 11: Tính S= 1+ 1.2+ 1.2.3+...+ 1.2.3....n
 ```cpp
 long bai11(int n)
 {	
@@ -121,7 +121,7 @@ long bai11(int n)
 	//bai09 la ham tinh giai thua da tinh o tren
 }
 ```
-###Bài 12: Tính S= x+ x^2+ x^3+...x^n
+### Bài 12: Tính S= x+ x^2+ x^3+...x^n
 ```cpp
 int bai12(int x, int n)
 {
@@ -131,7 +131,7 @@ int bai12(int x, int n)
 		return bai12(x, n-1) + pow((float)x,n);
 }
 ```
-###Bài 13: Tính tổng S= x^2+ x^4+ x^6+...+ x^2n
+### Bài 13: Tính tổng S= x^2+ x^4+ x^6+...+ x^2n
 ```cpp
 int bai13(int x, int n)
 {
@@ -141,7 +141,7 @@ int bai13(int x, int n)
 		return bai13(x, n-1) + pow((float)x,2*n);
 }
 ```
-###Bài 14: Tính tổng S(x,n)= x^1+ x^3+ x^5+...+x^(2n+1)
+### Bài 14: Tính tổng S(x,n)= x^1+ x^3+ x^5+...+x^(2n+1)
 ```cpp
 int bai14(int x, int n)
 {
@@ -152,7 +152,7 @@ int bai14(int x, int n)
 }
 
 ```
-###Bài 15: Tính tổng S(n)= 1+ 1/(1+2)+ 1/(1+2+3)+...+ 1/(1+2+3+...+n)
+### Bài 15: Tính tổng S(n)= 1+ 1/(1+2)+ 1/(1+2+3)+...+ 1/(1+2+3+...+n)
 ```cpp
 float bai15(int n)
 {
@@ -162,7 +162,7 @@ float bai15(int n)
 		return bai15(n-1) + (float)1/ bai01(n-1);
 }
 ```
-###Bài 16: Tính tổng S(n)= x+ x^2/2!+ x^3/3!+...x^n/n!
+### Bài 16: Tính tổng S(n)= x+ x^2/2!+ x^3/3!+...x^n/n!
 ```cpp
 float bai16(int x, int n)
 {
@@ -173,7 +173,7 @@ float bai16(int x, int n)
 		return bai16(x, n-1)+ ((bai10(x, n-1)* pow((float)x, n))/(bai09(n-1)*n));
 }
 ```
-###Bài 17: Tính tổng S(n)= 1+ x^2/2!+ x^4/4!+...+ x^(2n)/(2n)!
+### Bài 17: Tính tổng S(n)= 1+ x^2/2!+ x^4/4!+...+ x^(2n)/(2n)!
 ```cpp
 float bai17(int x, int n)
 {
@@ -183,7 +183,7 @@ float bai17(int x, int n)
 		return bai17(x, n-1) +( (bai10(x, n-1)* pow((float)x, n))/ (bai09(n-1)* 2*n));
 }
 ```
-###Bài 18: Tính S(n)= sqrt(2+ sqr(2+ sqrt(2+ ...+sqrt(2))) có n dấu căn
+### Bài 18: Tính S(n)= sqrt(2+ sqr(2+ sqrt(2+ ...+sqrt(2))) có n dấu căn
 ```cpp
 float bai18(int n)
 {
@@ -193,7 +193,7 @@ float bai18(int n)
 		return sqrt(2 + bai18(n - 1));
 }
 ```
-###Bài 19: Tính tổng S(n)= sqrt(n+ sqrt(n- 1)+ sqrt(n-1+...+ sqrt(1))) có n dấu căn
+### Bài 19: Tính tổng S(n)= sqrt(n+ sqrt(n- 1)+ sqrt(n-1+...+ sqrt(1))) có n dấu căn
 ```cpp
 float bai19(int n)
 {
@@ -202,7 +202,7 @@ float bai19(int n)
 	return sqrt((n-1) + bai19(n-1)); 
 }
 ```
-###Bài 20: Tin tong S(n)= sqrt(1+ sqrt(2+ sqrt(3+...+sqrt(n))))
+### Bài 20: Tin tong S(n)= sqrt(1+ sqrt(2+ sqrt(3+...+sqrt(n))))
 ```cpp
 float bai20(int n)
 {
@@ -212,7 +212,7 @@ float bai20(int n)
 		return sqrt(bai20(n- 1)+ sqrt((float)n));
 }
 ```
-###Bài 21: Tính tổng S(n)= 1+ 1/ 1+ 1/ 1+ 1/ 1+...1/ 1+1 có n dấu chia
+### Bài 21: Tính tổng S(n)= 1+ 1/ 1+ 1/ 1+ 1/ 1+...1/ 1+1 có n dấu chia
 ```cpp
 float bai21(int n)
 {
@@ -223,7 +223,7 @@ float bai21(int n)
 }
 ```
 ## ĐỆ QUY KIỂM TRA TÍNH TOÁN
-###Bài 22: Tìm ước số lẻ lớn nhất của n
+### Bài 22: Tìm ước số lẻ lớn nhất của n
 ```cpp
 int bai22(int n)
 {
@@ -236,7 +236,7 @@ int bai22(int n)
 }
 
 ```
-###Bài 23: Đếm số các chữ số của số nguyên dương n
+### Bài 23: Đếm số các chữ số của số nguyên dương n
 ```cpp
 int bai23(int n)
 {
@@ -249,7 +249,7 @@ int bai23(int n)
 	return bai23(n / 10) + 1;
 }
 ```
-###Bài 24: Tính tổng các chữ số của số nguyên dương n
+### Bài 24: Tính tổng các chữ số của số nguyên dương n
 ```cpp
 int bai24(int n)
 {
@@ -261,7 +261,7 @@ int bai24(int n)
 	return bai24(n / 10) + n % 10;
 }
 ```
-###Bài 25: Tính tích các chữ số của số nguyên dương n
+### Bài 25: Tính tích các chữ số của số nguyên dương n
 ```cpp
 int bai25(int n)
 {
@@ -273,7 +273,7 @@ int bai25(int n)
 	return bai25(n /10) * (n % 10);
 }
 ```
-###Bài 26: Đếm các chữ số lẻ của số nguyên dương n
+### Bài 26: Đếm các chữ số lẻ của số nguyên dương n
 ```cpp
 int bai26(int n)
 {
@@ -289,7 +289,7 @@ int bai26(int n)
 	return bai26(n / 10);
 }
 ```
-###Bài 27:Tính tổng các số chẵn của số nguyên dương n
+### Bài 27:Tính tổng các số chẵn của số nguyên dương n
 ```cpp
 int bai27(int n)
 {
@@ -305,7 +305,7 @@ int bai27(int n)
 	return bai27(n / 10);
 }
 ```
-###Bài 28: Tính tích các số lẻ của số n
+### Bài 28: Tính tích các số lẻ của số n
 ```cpp
 int bai28(int n)
 {
@@ -320,7 +320,7 @@ int bai28(int n)
 	return bai28(n / 10);
 }
 ```
-###Bài 29: Tìm chữ số đứng đầu tiên của số nguyên dương n
+### Bài 29: Tìm chữ số đứng đầu tiên của số nguyên dương n
 ```cpp
 int bai29(int n)
 {
@@ -331,7 +331,7 @@ int bai29(int n)
 }
 
 ```
-###Bài 30: Đảo ngược các chữ số của số nguyên n
+### Bài 30: Đảo ngược các chữ số của số nguyên n
 ```cpp
 void bai30(int n)
 {
@@ -341,7 +341,7 @@ void bai30(int n)
 	bai30(n/10); 
 }
 ```
-###Bài 31: Tìm chữ số lớn nhất của số nguyên dương n
+### Bài 31: Tìm chữ số lớn nhất của số nguyên dương n
 ```cpp
 int bai31(int n, int max= 0)
 {    
@@ -357,7 +357,7 @@ int bai31(int n, int max= 0)
     return bai31(n/10,max);
 }
 ```
-###Bài 32: Kiểm tra số nguyên dương n có gồm toàn chữ số lẻ hay không
+### Bài 32: Kiểm tra số nguyên dương n có gồm toàn chữ số lẻ hay không
 ```cpp
 int bai32(int n)
 {
@@ -371,7 +371,7 @@ int bai32(int n)
 		return 1;//toan so chan
 }
 ```
-###Bài 33: Tìm UCLN của hai số nguyên dương
+### Bài 33: Tìm UCLN của hai số nguyên dương
 ```cpp
 int UCLN(int a, int b)
 {
@@ -380,7 +380,7 @@ int UCLN(int a, int b)
 	return UCLN(b,a% b);
 }
 ```
-###Bài 34: Tính giá trị phần tử tại dòng d và cột c của tam giác Pascal
+### Bài 34: Tính giá trị phần tử tại dòng d và cột c của tam giác Pascal
 ```cpp
 int bai34(int a, int b)
 {
@@ -392,7 +392,7 @@ int bai34(int a, int b)
 		
 }
 ```
-###Bài 35: Tính giá trị C(n, k)= k!/ (n!- (n-k)!) biết:
+### Bài 35: Tính giá trị C(n, k)= k!/ (n!- (n-k)!) biết:
 * C(n, k)= 1 nếu k= 0 hoặc k= n
 * C(n. k)= 0 nếu k> n
 * C(n, k)= C(n- 1, k)+ C(n- 1, k- 1) nếu 0< k< n
@@ -406,7 +406,7 @@ long bai35(int n,int k)
 	return bai35(n-1,k) + bai35(n-1,k-1);
 }
 ```
-###Bài 36: Đổi một số ở hệ thập phân sang hệ cơ số khác
+### Bài 36: Đổi một số ở hệ thập phân sang hệ cơ số khác
 ```cpp
 void bai36(int n)//doi sang he co so 2
 {
@@ -432,7 +432,7 @@ void nhapMang(int a[], int n)
 	}
 }
 ```
-###Bài 37: Xuất mảng bằng đệ quy
+### Bài 37: Xuất mảng bằng đệ quy
 ```cpp
 void bai37(int a[], int n)
 {
@@ -442,7 +442,7 @@ void bai37(int a[], int n)
 	}
 }
 ```
-###Bài 38: Tính tổng các phần tử trong mảng bằng đệ quy
+### Bài 38: Tính tổng các phần tử trong mảng bằng đệ quy
 ```cpp
 int bai38(int a[], int n)
 {
@@ -452,7 +452,7 @@ int bai38(int a[], int n)
 		return a[n]+ bai38(a, n- 1);
 }
 ```
-###Bài 39: Tìm số nhỏ nhất trong mảng bằng đệ quy
+### Bài 39: Tìm số nhỏ nhất trong mảng bằng đệ quy
 ```cpp
 int bai39(int a[], int n)
 {
@@ -468,7 +468,7 @@ int bai39(int a[], int n)
 	
 }
 ```
-###Bài 40: Kiểm tra mảng có phải toàn số dương hay không bằng đệ quy
+### Bài 40: Kiểm tra mảng có phải toàn số dương hay không bằng đệ quy
 ```cpp
 int bai40(int a[], int n)
 {
